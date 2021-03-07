@@ -38,7 +38,7 @@ img#day {
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 0;
-  animation: img 1s linear both;
+  animation: img 3s linear both;
   animation-play-state: paused;
   z-index: 2;
 }
@@ -346,8 +346,8 @@ div.light_green {
   }
 
   100% {
-    height: calc(var(--size)+70vh);
-    width: calc(var(--size)+70vh);
+    height: calc(var(--size)+65vh);
+    width: calc(var(--size)+65vh);
     opacity: 1;
   }
 }
