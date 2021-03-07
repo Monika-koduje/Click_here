@@ -354,12 +354,18 @@ div.light_green {
 
 @media screen and (orientation: portrait) {
   img#day {
-    max-width: 50vh;
+    max-width: 60vh;
   }
 }
 
 @media screen and (min-width: 1200px) {
   img#day {
     max-width: 80vh;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  img#day {
+    max-width: 30vh;
   }
 }
