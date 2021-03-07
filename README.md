@@ -8,4 +8,5 @@ Project is created with:
 * JavaScript
 
 Icons made by https://www.freepik.com from https://www.flaticon.com/
+
 Image source: https://www.pexels.com/pl-pl/
