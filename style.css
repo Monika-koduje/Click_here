@@ -1,0 +1,353 @@
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  --size: 10vh;
+  --sizeHover: 20vh;
+  --top_part_1: 10%;
+  --top_part_2: 41%;
+  --top_part_3: 24%;
+  --top_part_4: 72%;
+  --top_part_5: 58%;
+  --left_part_1: 32%;
+  --left_part_2: 42%;
+  --left_part_3: 64%;
+  --left_part_4: 53%;
+  --twistLeft: 49%;
+  --backTwistLeft: 51%;
+}
+
+body {
+  background-color: honeydew;
+}
+
+img#day,
+button.click,
+div {
+  position: absolute;
+  height: var(--size);
+  width: var(--size);
+  border-radius: var(--size);
+}
+
+img#day {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0;
+  animation: img 1s linear both;
+  animation-play-state: paused;
+  z-index: 2;
+}
+
+button.click {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-decoration: none;
+  outline: none;
+  letter-spacing: 0.5px;
+  font-size: 1em;
+  font-family: sans-serif;
+  font-weight: bold;
+  background-color: white;
+  border: 2px solid lightseagreen;
+  cursor: pointer;
+  transition: 0.6s;
+  animation: twist 5s linear infinite;
+  z-index: 3;
+}
+
+button.click:hover {
+  height: var(--sizeHover);
+  width: var(--sizeHover);
+  font-size: 1.5em;
+  text-transform: uppercase;
+  color: white;
+  background-color: lightseagreen;
+  animation-play-state: paused;
+}
+
+div {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 65%;
+  opacity: 0;
+  animation: show 10s linear;
+  animation-play-state: paused;
+  z-index: 1;
+}
+
+div.red {
+  background-color: red;
+  top: var(--top_part_1);
+  left: var(--left_part_4);
+  background-image: url("./IMG/heart.png");
+}
+
+div.blue {
+  background-color: blue;
+  top: var(--top_part_1);
+  left: var(--left_part_2);
+  background-image: url("./IMG/computer.png");
+  animation-delay: 2s;
+}
+
+div.green {
+  background-color: green;
+  top: var(--top_part_3);
+  left: var(--left_part_1);
+  background-image: url("./IMG/check.png");
+  animation-delay: 4s;
+}
+
+div.yellow {
+  background-color: yellow;
+  top: var(--top_part_2);
+  left: var(--left_part_1);
+  background-image: url("./IMG/cooperative.png");
+  animation-delay: 6s;
+}
+
+div.pink {
+  background-color: pink;
+  top: var(--top_part_5);
+  left: var(--left_part_1);
+  background-image: url("./IMG/high-five.png");
+  animation-delay: 8s;
+}
+
+div.brown {
+  background-color: brown;
+  top: var(--top_part_4);
+  left: var(--left_part_2);
+  background-image: url("./IMG/rating.png");
+  animation-delay: 10s;
+}
+
+div.grey {
+  background-color: grey;
+  top: var(--top_part_3);
+  left: var(--left_part_3);
+  background-image: url("./IMG/review.png");
+  animation-delay: 18s;
+}
+
+div.purple {
+  background-color: purple;
+  top: var(--top_part_2);
+  left: var(--left_part_3);
+  background-image: url("./IMG/test.png");
+  animation-delay: 16s;
+}
+
+div.light_blue {
+  background-color: lightblue;
+  top: var(--top_part_5);
+  left: var(--left_part_3);
+  background-image: url("./IMG/team.png");
+  animation-delay: 14s;
+}
+
+div.light_green {
+  background-color: lightgreen;
+  top: var(--top_part_4);
+  left: var(--left_part_4);
+  background-image: url("./IMG/support.png");
+  animation-delay: 12s;
+}
+
+@keyframes twist {
+  0% {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  9.99% {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  10% {
+    left: var(--twistLeft);
+  }
+
+  11% {
+    left: var(--backTwistLeft);
+  }
+
+  12% {
+    left: var(--twistLeft);
+  }
+
+  13% {
+    left: var(--backTwistLeft);
+  }
+
+  14% {
+    left: var(--twistLeft);
+  }
+
+  15% {
+    left: var(--backTwistLeft);
+  }
+
+  16% {
+    left: var(--twistLeft);
+  }
+
+  17% {
+    left: var(--backTwistLeft);
+  }
+
+  18% {
+    left: var(--twistLeft);
+  }
+
+  19% {
+    left: var(--backTwistLeft);
+  }
+
+  20% {
+    left: var(--twistLeft);
+  }
+
+  20.01% {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  100% {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 1;
+  }
+
+  30% {
+    opacity: 0;
+  }
+
+  40% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  60% {
+    opacity: 0;
+  }
+
+  70% {
+    opacity: 0;
+  }
+
+  80% {
+    opacity: 0;
+  }
+
+  90% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes img {
+  0% {
+    height: var(--size);
+    width: var(--size);
+    opacity: 0;
+  }
+
+  5% {
+    height: var(--size);
+    width: var(--size);
+    opacity: 0;
+  }
+
+  10% {
+    height: calc(var(--size)+5vh);
+    width: calc(var(--size)+5vh);
+    opacity: 1;
+  }
+
+  20% {
+    height: calc(var(--size)+10vh);
+    width: calc(var(--size)+10vh);
+  }
+
+  30% {
+    height: calc(var(--size)+15vh);
+    width: calc(var(--size)+15vh);
+  }
+
+  40% {
+    height: calc(var(--size)+20vh);
+    width: calc(var(--size)+20vh);
+  }
+
+  50% {
+    height: calc(var(--size)+30vh);
+    width: calc(var(--size)+30vh);
+  }
+
+  60% {
+    height: calc(var(--size)+35vh);
+    width: calc(var(--size)+35vh);
+  }
+
+  70% {
+    height: calc(var(--size)+40vh);
+    width: calc(var(--size)+40vh);
+  }
+
+  80% {
+    height: calc(var(--size)+45vh);
+    width: calc(var(--size)+45vh);
+  }
+
+  90% {
+    height: calc(var(--size)+50vh);
+    width: calc(var(--size)+50vh);
+  }
+
+  95% {
+    height: calc(var(--size)+55vh);
+    width: calc(var(--size)+55vh);
+  }
+
+  98% {
+    height: calc(var(--size)+60vh);
+    width: calc(var(--size)+60vh);
+  }
+
+  100% {
+    height: calc(var(--size)+70vh);
+    width: calc(var(--size)+70vh);
+    opacity: 1;
+  }
+}

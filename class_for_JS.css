@@ -1,0 +1,14 @@
+.animationPlay {
+  animation-play-state: running;
+}
+
+.animationPlayImg {
+  animation-play-state: running !important;
+  cursor: pointer;
+  z-index: 5;
+}
+
+.removeClick {
+  display: none;
+  z-index: -1;
+}
