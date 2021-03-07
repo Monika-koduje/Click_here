@@ -363,9 +363,3 @@ div.light_green {
     max-width: 80vh;
   }
 }
-
-@media screen and (max-width: 300px) {
-  img#day {
-    max-width: 30vh;
-  }
-}
