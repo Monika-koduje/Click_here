@@ -4,7 +4,7 @@ Click here button with animation
 ## Live Demo:
 [Try the app here](https://monika-koduje.github.io/Click_here/)
 
-## Technology stack:
+## Technology Stack:
      CSS3
      HTML5
      JavaScript
