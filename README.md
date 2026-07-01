@@ -1,11 +1,13 @@
 # Click_here
 Click here button with animation
 
-## Technologies
-Project is created with:
-* CSS3
-* HTML5
-* JavaScript
+## Live Demo:
+[Try the app here](https://monika-koduje.github.io/Click_here/)
+
+## Technology stack:
+     CSS3
+     HTML5
+     JavaScript
 
 Icons made by https://www.freepik.com from https://www.flaticon.com/
 
